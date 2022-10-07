@@ -1,0 +1,36 @@
+._faqs {
+    padding: 60px 0;
+
+    ._faqs_items {
+        padding: 0.75rem 0;
+
+
+        ._faqs_item {
+            border-bottom: 1px solid #afafaf54;
+            padding: 1rem;
+
+
+            ._collapse_header {
+
+                ._collapse_question {
+                    font-size: 20px;
+                    cursor: pointer;
+                    color: #333;
+                }
+
+                &:hover {
+                    color: red;
+                }
+                
+            }
+
+            ._collapse_answer {
+
+                ._collapse_body {
+                    padding-top: 0.75rem;
+                }
+            }
+
+        }
+    }
+}

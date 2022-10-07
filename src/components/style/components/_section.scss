@@ -1,0 +1,992 @@
+// >> section_heading
+._section_header {
+    position: relative;
+    padding-bottom: 20px;
+    margin-bottom: 60px;
+
+    &::before {
+        content: "";
+        position: absolute;
+        display: block;
+        width: 60px;
+        height: 5px;
+        background: #f82249;
+        bottom: 0;
+        left: calc(50% - 25px);
+    }
+
+    ._heading {
+        font-size: 36px;
+        margin-bottom: 10px;
+        font-weight: 700;
+        text-align: center;
+        text-transform: uppercase;
+        color: #112363;
+    }
+
+    ._lead {
+        font-size: 18px;
+        font-weight: 500;
+        color: #9195a2;
+        text-align: center;
+    }
+}
+
+
+.mapouter{
+    position:relative;
+    text-align:right;
+    width:100%;
+    min-height: auto;
+    min-height:400px;
+    max-height: 400px;
+  }
+  .gmap_canvas {
+    overflow:hidden;
+    background:none!important;
+    max-height: 400px;
+    width:100%;
+    min-height: 400px;
+  }
+  .gmap_iframe {
+    min-height:400px;
+    max-height: 400px;
+  }
+
+
+
+// >> About 
+._about {
+    position: relative;
+    padding: {
+        top: 60px;
+        bottom: 40px
+    };
+
+    &::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        height: 100%;
+        width: 100%;
+        background-color: rgba(13, 20, 41, 0.8);
+        backdrop-filter: blur(4px);
+    }
+
+    ._context {
+        position: relative;
+        display: grid;
+        grid-template-columns: 2fr 1fr 1fr;
+        grid-gap: 2rem;
+        font-family: "Raleway", sans-serif;
+        color: #fff;
+
+        @media only screen and (max-width: 768px) {
+            grid-template-columns: 1fr;
+        }
+
+        ._heading {
+            font-size: 38px;
+            margin-bottom: 1.2rem;
+            color: #fff;
+        }
+
+        ._sub_heading {
+            margin-bottom: 1rem;
+            font-size: 18px;
+            font-weight: 600;
+            color: #fff;
+            font-family: "Raleway", sans-serif;
+        }
+
+        ._lead {
+            font-size: 14px;
+            line-height: 1.5;
+        }
+    }
+}
+
+
+
+
+
+// >> Event Speakers
+._event_speakers {
+    font-family: "Raleway", sans-serif;
+    
+    ._context {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 3.5rem 0;
+
+        ._grid_items {
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+            grid-gap: 1.5rem;
+
+            ._grid_item {
+                position: relative;
+                overflow: hidden;
+
+                ._img {
+
+                    img {
+                        transition: 0.3s;
+                        width: 100%;
+                        vertical-align: middle;
+                    }
+                }
+
+                ._context {
+                    position: absolute;
+                    width: 100%;
+                    padding: 0.75rem;
+                    transition: 0.3s;
+                    background: rgba(6, 12, 34, 0.76);
+                    bottom: 0;
+                    transform: translateY(45px);
+
+                    &:hover {
+                        transform: translateY(0);
+                    }
+
+                    ._name {
+                        margin-bottom: 0.5rem;
+                        color: #fff;
+                    }
+
+                    ._lead {
+                        font-size: 14px;
+                        margin-bottom: 1rem;
+                        color: #fff;
+                    }
+
+                    ._social {
+                        display: flex;
+
+                        ._social_item {
+                            padding: 0.3rem;
+
+                            a {
+                                i {
+                                    font-size: 20px;
+                                    color: #fff;
+                                }
+                            }
+                        }
+                    }
+                }   
+
+                &:hover {
+                    ._img {
+                        img {
+                            transition: all 0.3s ease-in-out 0s;
+                            transform: scale(1.2);
+                        }
+                    }
+                }
+            }
+
+            @media only screen and(max-width: 992px) {
+                grid-template-columns: 1fr 1fr;
+            }
+
+            @media only screen and(max-width: 768px) {
+                grid-template-columns: 1fr;
+            }
+        }
+    }
+}
+
+
+
+
+// >> Event Schedule
+._event_schedule {
+    padding: 60px 0;
+    background-color: #f6f7fd;
+    font-family: "Raleway", sans-serif !important;
+    
+    ._context {
+
+        ._schedule_context {
+
+            ._schedule_heading {
+
+                ._schedule_nav {
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    margin-bottom: 30px;
+
+                    ._day {
+
+                        button {
+                            width: 243px;
+                            border: none;
+                            height: 44px;
+                            line-height: 44px;
+                            font-weight: 600;
+                            font-size: 16px;
+                            border-radius: 30px;
+                            background-color: #0e1b4d;
+                            color: #fff;
+
+                            @media only screen and(max-width: 768px) {
+                                width: 200px;
+                            }
+
+                            @media only screen and(max-width: 576px) {
+                                width: 150px;
+                            }
+                            
+                            &._active {
+                                background-color: #f82249;
+                            }
+                        }
+                    }
+                }
+
+                ._schedule_sub_heading {
+                    text-align: center;
+                    font-size: 18px;
+                    font-style: italic;
+                    font-weight: normal;
+                    margin: 0 auto 30px auto;
+
+                    @media only screen and (min-width: 992px) {
+                        width: 75%;
+                    }
+
+                    @media only screen and (max-width: 992px) {
+                        font-size: 17px;
+                    }
+
+                    @media only screen and(max-width: 576px) {
+                        font-size: 16px;
+                    }
+                }
+            }
+
+            ._schedules {
+                position: relative;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+
+                ._schedule {
+                    display: none;
+                    opacity: 0;
+                    transition: ease-in-out 0.2s;
+
+                    @media only screen and (min-width: 992px) {
+                        width: 75%;
+                    }
+
+                    &._active {
+                        display: block;
+                        opacity: 1;
+                        transition: opacity .15s linear;
+                    }
+                    ._schedule_item {
+                        display: flex;
+                        align-items: flex-start;
+                        padding: 15px 0;
+                        border-bottom: 1px solid #cad4f6;
+                        transition: 0.3s;
+
+                        &:hover {
+                            background-color: #fff;
+                        }
+
+
+                        ._time {
+                            padding-left: 0.75rem;
+                            font-family: Arial, Helvetica, sans-serif;
+                            color: #9195a2;
+
+                            @media  only screen and (max-width: 992px) {
+                                margin-bottom: 5px;
+                            }
+                        }
+
+                        ._context_ {
+                            padding: 0 0.75rem;
+
+                            h4 {
+                                font-size: 18px;
+                                font-weight: 600;
+                                margin-bottom: 5px;
+                            }
+
+                            p {
+                                font-style: italic;
+                                color: #152b79;
+                            }
+
+                            @media  only screen and (max-width: 992px) {
+                                h4 {
+                                    font-size: 16px;
+                                }
+
+                                p {
+                                    font-size: 14px;
+                                }
+                            }
+                        }
+
+                        ._context {
+                            display: flex;
+                            align-items: center;
+                            padding: 0 0.75rem;
+                            width: 80%;
+
+                            @media  only screen and (max-width: 992px) {
+                                width: 90%;
+                            }
+
+                            @media  only screen and (max-width: 768px) {
+                                width: 100%;
+                            }
+
+
+                            ._speakers {
+                                height: 60px;
+                                width: 60px;
+                                border-radius: 50%;
+
+                                img {
+                                    height: 60px;
+                                    width: 60px;
+                                    border-radius: 50%;
+                                    object-fit: cover;
+                                    transition: all ease-in-out 0.3s;
+                                    vertical-align: middle;
+                                }
+                            }
+
+                            ._context_text  {
+                                margin-left: 1.5rem;
+
+                                h4 {
+                                    font-size: 18px;
+                                    font-weight: 600;
+                                    margin-bottom: 5px;
+
+                                    span {
+                                        font-weight: normal;
+                                    }
+                                }
+
+                                p {
+                                    font-style: italic;
+                                    color: #152b79;
+                                    margin-bottom: 0;
+                                }
+
+                                @media  only screen and (max-width: 992px) {
+                                    margin-left: 0.75rem;
+
+                                    h4 {
+                                        font-size: 16px;
+                                    }
+    
+                                    p {
+                                        font-size: 14px;
+                                    }
+                                }
+                            }
+                        }
+
+                        @media only screen and (max-width: 768px) {
+                            flex-direction: column;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+// >> Event Venue
+._event_venue {
+    padding: 60px 0;
+
+    ._context {
+
+        ._map_and_venue_info {
+            display: flex;
+
+            ._map {
+                flex: 1;
+                width: 100%;
+            }
+
+            ._venue_info {
+                position: relative;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                flex: 1;
+                width: 100%;
+
+                &::before {
+                    content: "";
+                    position: absolute;
+                    left: 0;
+                    top: 0;
+                    height: 100%;
+                    width: 100%;
+                    background-color: rgba(13, 20, 41, 0.8);
+                }
+
+                ._venue_info_context {
+                    position: relative;
+                    flex-basis: 75%;
+                    padding-top: 60px;
+                    padding-bottom: 60px;
+
+                    ._heading {
+                        font-size: 36px;
+                        font-weight: 700;
+                        color: #fff;
+                        margin-bottom: 20px;
+                    }
+
+                    ._lead {
+                        color: #fff;
+                    }
+                }
+            }
+            
+            @media only screen and (max-width: 992px){
+                flex-direction: column;
+
+                ._venue_info {
+                    ._venue_info_context {
+                        text-align: center;
+                    }
+                }
+            }
+        }
+
+        ._venue_gallery {
+            padding-top: 5px;
+
+            ._galler_grid {
+                display: grid;
+                grid-template-columns: 1fr 1fr 1fr 1fr;
+                grid-gap: 5px;
+
+                
+                ._gallery_grid_item {
+                    overflow: hidden;
+
+                    a {
+                        img {
+                            width: 100%;
+                            vertical-align: middle;
+                            object-fit: cover;
+                            transition: all ease-in-out 0.4s;
+                        }
+                    }
+
+                    &:hover {
+                        a {
+                            img {
+                                transform: scale(1.1);
+                            }
+                        }
+                    }
+                }
+
+                @media only screen and (max-width: 992px){
+                    grid-template-columns: 1fr 1fr 1fr;
+                }
+
+                @media only screen and (max-width: 768px){
+                    grid-template-columns: 1fr 1fr;
+                } 
+
+                @media only screen and (max-width: 576px){
+                    grid-template-columns: 1fr;
+                }
+
+            }
+        }
+    }
+}
+
+
+
+// >> Hotel 
+._hotel {
+    padding: 60px 0;
+    background-color: #f6f7fd;
+
+    ._context {
+
+        ._hotels_grids {
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+            grid-gap: 2rem;
+
+            ._card {
+                border: 1px solid #e0e5fa;
+
+                ._card_img {
+                    overflow: hidden;
+
+                    img {
+                        width: 100%;
+                        height: auto;
+                        vertical-align: middle;
+                        object-fit: cover;
+                        transition: 0.3s ease-in-out;
+                    }
+                }
+
+                &:hover {
+                    ._card_img {
+                        img {
+                            transform: scale(1.1);
+                        }
+                    }
+                }
+
+                ._card_content {
+                    padding: 0.75rem;
+
+                    ._card_heading {
+                        margin-bottom: 0.5rem;
+                    }
+
+                    ._hotel_reviews {
+                        display: flex;
+                        align-items: center;
+                        margin-bottom: 0.5rem;
+
+                        ._star {
+                            margin-right: 0.5rem;
+
+                            i {
+                                font-size: 18px;
+                                color: #ffbb00;
+                            }
+                        }
+                    }
+                }
+            }
+
+            @media only screen and (max-width: 992px){
+                grid-template-columns: 1fr 1fr;
+            }
+
+            @media only screen and (max-width: 768px){
+                grid-template-columns: 1fr;
+            } 
+        }
+    }
+}
+
+
+
+// >> sponsor
+._sponsor {
+    padding: 60px 0;
+    ._content {
+
+        ._context {
+
+            ._sponsor_grid_items {
+                display: grid;
+                grid-template-columns: 1fr 1fr 1fr 1fr;
+                grid-gap: 1.75rem;
+                border-left: 1px solid #e0e5fa;
+                border-top: 1px solid #e0e5fa;
+                padding: 0 0.75rem;
+
+                ._grid_item {
+                    border-right: 1px solid #e0e5fa;
+
+
+                    ._sponsor_logo {
+                        height:  160px;
+                        display: flex;
+                        align-items: center;
+                        padding: 30px;
+                        border-bottom: 1px solid #e0e5fa;
+                        
+                        img {
+                            width: 100%;
+                            transition: 0.3s;
+                        }
+
+                        &:hover {
+                            img {
+                                transform: scale(1.2);
+                            }
+                        }
+                    }
+                }
+
+                @media only screen and (max-width: 768px){
+                    grid-template-columns: 1fr 1fr;
+                }
+
+                @media only screen and (max-width: 768px){
+                    grid-template-columns: 1fr;
+                }
+            }
+        }
+    }
+}
+
+
+// >> Faq 
+._faqs {
+    padding: 60px 0;
+
+    ._faqs_items {
+        padding: 0.75rem 0;
+
+
+        ._faqs_item {
+            border-bottom: 1px solid #afafaf54;
+            padding: 1rem 0;
+
+
+            ._collapse_header {
+
+                ._collapse_question {
+                    font-size: 20px;
+                    cursor: pointer;
+                    color: #333;
+
+                    ._flx {
+                        span {
+                            margin-right: 0.5rem;
+                        }
+                    }
+                }
+
+                &:hover {
+                    color: red;
+                }
+                
+            }
+
+            ._collapse_answer {
+
+                ._collapse_body {
+                    padding-top: 0.75rem;
+                    padding-left: 1.75rem;
+                }
+            }
+
+        }
+    }
+}
+
+
+// >> subscribe 
+._subscribe {
+    padding: 60px 0;
+    position: relative;
+
+    &::before {
+        content: "";
+        background: rgba(6, 12, 34, 0.6);
+        position: absolute;
+        bottom: 0;
+        top: 0;
+        left: 0;
+        right: 0;
+    }
+
+    ._context {
+        position: relative;
+
+        ._section_header {
+
+            ._heading {
+                color: #fff;
+                font-family: "Raleway", sans-serif !important;
+
+            }
+
+            ._lead {
+                color: #e0e5fa;
+            }
+        }
+
+        ._subscribe_form {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+            form {
+                flex-basis: 50%;
+
+                ._input_group {
+                    height: 42px;
+                    display: flex;
+                    align-items: center;
+
+                    input {
+                        flex: 1;
+                        height: 42px;
+                        padding: 0 28px;
+                        border: none;
+                        border-radius: 30px;
+                        outline: none;
+                    }
+
+                    button {
+                        height: 42px;
+                        padding: 0 28px;
+                        border: none;
+                        border-radius: 30px;
+                        margin-left: .75rem;
+                        color: #fff;
+                        background-color: #f82249;
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+
+// >> Buy Ticket 
+._buy_ticket {
+    padding: 60px 0;
+    background-color: #f6f7fd;
+
+    ._context {
+
+        ._buy_ticket_grid_items {
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+            grid-gap: 2rem;
+
+            ._buy_ticket_grid_item {
+                border-radius: 5px;
+                box-shadow: 0 10px 25px 0 rgb(6 12 34 / 10%);
+                transition: all 0.3s ease-in-out;
+                background-color: #fff;
+
+                 &:hover {
+                    box-shadow: 0 10px 25px 0 rgb(6 12 34 / 20%);
+                 }
+
+                ._card_header {
+                    position: relative;
+                    padding: 30px 20px;
+
+                    ._sub_heading {
+                        text-align: center;
+                        text-transform: uppercase;
+                        margin-bottom: 10px;
+                        font-weight: 500;
+                        color: #aeb6d3;
+                    }
+
+                    ._card_subscription_price {
+                        text-align: center;
+                        font-family: "Raleway", sans-serif;
+                        font-size: 35px;
+                        font-weight: 500;
+                        color: #152b79;
+                    }
+
+                    &::before {
+                        content: "";
+                        position: absolute;
+                        height: 1px;
+                        width: 90%;
+                        background-color: #cad4f6;
+                        bottom: 0;
+                    }
+                }
+
+                ._card_accessability {
+                    position: relative;
+                    padding: 30px 20px;
+
+                    &::before {
+                        content: "";
+                        position: absolute;
+                        height: 1px;
+                        width: 90%;
+                        background-color: #cad4f6;
+                        bottom: 0
+                    }
+
+                    ._card_accessability_items {
+                        padding: 0 1.5rem;
+
+
+
+                        ._card_accessability_item {
+                            &:not(:last-child) {
+                                margin-bottom: 1.2rem;
+                            }
+
+                            &._disabled {
+                                color: #9195a2;
+                            }
+                        }
+                    }
+                }
+
+                ._card_footer {
+                    padding: 30px 20px;
+
+
+                    ._buy_button {
+                        height: 42px;
+                        padding: 0 42px;
+                        border-radius: 30px;
+                        font-weight: 600;
+                        border: none;
+                        cursor: pointer;
+                        background-color: #f82249;
+                        color: #fff;
+                    }
+                }
+            }
+
+            @media only screen and (max-width: 992px) {
+                grid-template-columns: 1fr 1fr;
+            }
+
+            @media only screen and (max-width: 768px) {
+                grid-template-columns: 1fr;
+            }
+        }
+    }
+}
+
+
+// >> contact
+._contact {
+    padding: 60px 0;
+
+    ._context {
+
+        ._contact_details {
+            margin-bottom: 20px;
+
+            ._contact_details_grid_items {
+                display: grid;
+                grid-template-columns: 1fr 1fr 1fr;
+                grid-gap: 1.5rem;
+
+
+                ._contact_details_grid_item {
+                    &:nth-child(2) {
+                        border-left: 1px solid #cad4f6;
+                        border-right: 1px solid #cad4f6;
+                    }
+                    padding: 30px 0;
+                    margin-bottom: 20px;
+
+                    ._icon, ._heading, ._lead {
+                        text-align: center;
+                    }
+
+                    ._icon {
+                        margin-bottom: 1.5rem;
+
+                        i {
+                            font-size: 50px;
+                            color: #f82249;
+                        }
+                    }
+
+                    ._heading {
+                        font-size: 18px;
+                        margin-bottom: 15px;
+                        font-weight: bold;
+                        text-transform: uppercase;
+                        color: #112363;
+                    }
+
+                    ._lead {
+                        color: #152b79;
+                    }
+                }
+
+                @media only screen and (max-width: 768px) {
+                    grid-template-columns: 1fr;
+
+
+                    ._contact_details_grid_item {
+                        // border-left: 1px solid #cad4f6;
+                        // border-right: 1px solid #cad4f6;
+                    }
+                }
+            }
+        }
+
+        ._form {
+            ._form_group {
+                margin-bottom: 15px;
+                ._name_email {
+                    display: flex;
+
+                    ._name, ._email {
+                        flex: 1;
+                    }
+
+                    ._name {
+                        margin-right: 0.75rem;
+                    }
+                    ._email {
+                        margin-left: 0.75rem;
+                    }
+
+                    @media only screen and (max-width: 768px) {
+                        flex-direction: column;
+
+                        ._name {
+                            padding-bottom: 15px;
+                        }
+
+                        ._name, ._email {
+                            margin: 0;
+                        }
+                    }
+                }
+
+
+                ._form_control {
+                    width: 100%;
+                    padding: 12px 15px;
+                    border: 1px solid #ced4da;
+                    border-radius: 2px;
+                    font-size: 16px;
+                    outline: none;
+                }
+
+                ._send_button {
+                    height: 45px;
+                    line-height: 45px;
+                    padding: 0 45px;
+                    border-radius: 30px;
+                    border: none;
+                    font-size: 16px;
+                    font-weight: 500;
+                    background-color: #f82249;
+                    color: #fff;
+                    cursor: pointer;
+                }
+            }
+        }
+    }
+}

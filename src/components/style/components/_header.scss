@@ -1,0 +1,118 @@
+._header {
+    z-index: 9999;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 90px;
+    transition: all 0.5s;
+
+    &.scrolled_view {
+        height: 70px;
+        background: rgba(6, 12, 34, 0.98)
+    }
+
+    ._container {
+        height: 100%;
+    }
+
+    ._content {
+        height: 100%;
+        padding: 0 0.75rem;
+        display: flex;
+        align-items: center;
+
+
+        ._brand_logo {
+            justify-self: flex-start;
+            flex: 1;
+
+            a {
+                img {
+                    max-height: 40px;
+                    vertical-align: middle;
+
+                    @media only screen and (max-width: 768px) {
+                        max-height: 30px;
+                    }
+                }
+            }
+        }
+
+        ._mainNav {
+            justify-self: flex-end;
+
+            
+
+            ul {
+                margin-bottom: 0;
+                list-style: none;
+                display: flex;
+                align-items: center;
+
+                li {
+                    padding: 10px 0 10px 12px;
+                    position: relative;
+                    transition: 0.5s;
+
+                    ._nav_link {
+                        position: relative;
+                        padding: 6px 4px;
+                        font-size: 14px;
+                        font-weight: 600;
+                        white-space: nowrap;
+                        font-weight: bold;
+                        color: rgba(202, 206, 221, 0.8);
+                        transition: 0.3s;
+                        overflow: hidden;
+                        
+                        &::before {
+                            content: "";
+                            position: absolute;
+                            width: 0;
+                            height: 2px;
+                            bottom: -6px;
+                            left: 0;
+                            background-color: #f82249;
+                            visibility: hidden;
+                            transition: all 0.3s ease-in-out 0s;
+                        }
+
+                        &:hover {
+
+                            &::before {
+                                visibility: visible;
+                                width: 100%;
+                            }
+                        }
+                    }
+
+                    &:hover {
+                        ._nav_link {
+                            
+                            &::before {
+                                visibility: visible;
+                                width: 100%;
+                            }
+                        }
+                    }
+
+                }
+            }
+        }
+
+        ._buy_ticket {
+            color: #fff;
+            background: #f82249;
+            padding: 7px 22px;
+            margin: 0 0 0 15px;
+            border-radius: 50px;
+            border: 2px solid #f82249;
+            transition: all ease-in-out 0.3s;
+            font-weight: 500;
+            line-height: 1;
+            font-size: 13px;
+            white-space: nowrap;
+        }
+    }
+}

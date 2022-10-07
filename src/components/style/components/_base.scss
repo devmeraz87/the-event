@@ -1,0 +1,167 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Open Sans", sans-serif;
+    scroll-behavior: smooth;
+}
+
+._container {
+    margin: 0 auto;
+}
+
+._content {
+    padding: 0 0.75rem;
+}
+
+@media only screen and (min-width: 500px) {
+    ._container {
+        max-width: 480px;
+    }
+}
+
+@media only screen and (min-width: 576px) {
+    ._container {
+        max-width: 540px;
+    }
+}
+
+@media only screen and (min-width: 768px) {
+    ._container {
+        max-width: 720px;
+    }
+}
+
+@media only screen and (min-width: 992px) {
+    ._container {
+        max-width: 960px;
+    }
+}
+
+@media only screen and (min-width: 1200px) {
+    ._container {
+        max-width: 1140px;
+    }
+}
+
+@media only screen and (min-width: 1400px) {
+    ._container {
+        max-width: 1320px;
+    }
+}
+
+
+// >> FLEX =============>
+
+._flx {
+    display: flex;
+
+    &_1 {
+        flex: 1;
+    }
+
+    // >> DIRECTION ===========>
+
+    &_dir {
+
+        &_cl {
+            flex-direction: column;
+        }
+
+        &_cl_rev {
+            flex-direction: column-reverse;
+        }
+    }
+
+    // >> ALIGN ITEM
+
+    &_al {
+
+        &_st {
+            align-items: flex-start;
+        }
+
+        &_ce {
+            align-items: center;
+        }
+
+        &_en {
+            align-items: flex-end;
+        }
+
+        &_bls {
+            align-items: baseline;
+        }
+
+        &_str {
+            align-items: stretch;
+        }
+    }
+
+    // >> JUSTIFY CONTENT
+
+    &_ju {
+
+        &_def_st {
+            justify-content: start;
+        }
+
+        &_st {
+            justify-content: flex-start;
+        }
+
+        &_ce {
+            justify-content: center;
+        }
+
+        &_en {
+            justify-content: flex-end;
+        }
+
+        &_fbsl {
+            justify-content: first baseline;
+        }
+
+        &_bsl {
+            justify-content: baseline;
+        }
+
+        &_lbsl {
+            justify-content: last baseline;
+        }
+        
+        &_spar {
+            justify-content: space-around;
+        }
+
+        &_spbt {
+            justify-content: space-between;
+        }
+
+        &_spev {
+            justify-content: space-evenly;
+        }
+
+        &_lft {
+            justify-content: left;
+        }
+
+        &_rgt {
+            justify-content: right;
+        }
+    }
+}
+
+
+h1, h2, h3, h4, h5, h6 {
+    color: #0e1b4d;
+}
+
+
+
+a {
+    text-decoration: none;
+}
