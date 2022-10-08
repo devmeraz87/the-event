@@ -134,12 +134,14 @@ a {
 }
 ._header ._container {
   height: 100%;
+  width: 100%;
 }
 ._header ._content {
-  height: 100%;
-  padding: 0 0.75rem;
   display: flex;
   align-items: center;
+  height: 100%;
+  width: 100%;
+  padding: 0 0.75rem;
 }
 ._header ._content ._brand_logo {
   justify-self: flex-start;
@@ -624,6 +626,14 @@ a {
 @media only screen and (max-width: 768px) {
   ._event_schedule ._context ._schedule_context ._schedule_heading ._schedule_nav ._day button {
     width: 150px;
+  }
+}
+@media only screen and (max-width: 500px) {
+  ._event_schedule ._context ._schedule_context ._schedule_heading ._schedule_nav ._day button {
+    width: 100px;
+    height: 40px;
+    line-height: 40px;
+    font-size: 12px;
   }
 }
 ._event_schedule ._context ._schedule_context ._schedule_heading ._schedule_nav ._day button._active {

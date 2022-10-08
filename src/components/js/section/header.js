@@ -60,7 +60,7 @@ const Header = () => {
                             null
                         ) : (
                             <>
-                                <div className="_small_nav_show_button" onClick={ShowNavFunc}>
+                                <div className="_small_nav_show_button _flx _flx_al_ce _flx_ju_ce" onClick={ShowNavFunc}>
                                     <GiHamburgerMenu />
                                 </div>
                                 {showNav && (
