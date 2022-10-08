@@ -6,6 +6,7 @@ import EventSchedule from "./components/event_schedule";
 import EventSpeakers from "./components/event_speakers";
 import EventVenue from "./components/event_venue";
 import FAQ from "./components/faq";
+import Gallery_ from "./components/gallery";
 import Hotel from "./components/hotel";
 import Sponsor from "./components/sponsor";
 import Subscribe from "./components/subscribe";
@@ -27,6 +28,7 @@ const Main = () => {
                 <EventSchedule />
                 <EventVenue />
                 <Hotel />
+                <Gallery_ />
                 <Sponsor />
                 <FAQ />
                 <Subscribe />

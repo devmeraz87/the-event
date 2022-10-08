@@ -29,11 +29,24 @@ import venue_gallery_8 from "../../assest/venue_gallery/8.jpg"
 
 
 // >> ====================================================================>> 
-// >>                           Event Speaders image
+// >>                           Hotels image
 // >> ====================================================================>> 
 import hotel_card_image_1 from "../../assest/hotels/1.jpg"
 import hotel_card_image_2 from "../../assest/hotels/2.jpg"
 import hotel_card_image_3 from "../../assest/hotels/3.jpg"
+
+
+// >> ====================================================================>> 
+// >>                           Gallery
+// >> ====================================================================>> 
+import Gallery_image_1 from "../../assest/slider/1.jpg"
+import Gallery_image_2 from "../../assest/slider/2.jpg"
+import Gallery_image_3 from "../../assest/slider/3.jpg"
+import Gallery_image_4 from "../../assest/slider/4.jpg"
+import Gallery_image_5 from "../../assest/slider/5.jpg"
+import Gallery_image_6 from "../../assest/slider/6.jpg"
+import Gallery_image_7 from "../../assest/slider/7.jpg"
+import Gallery_image_8 from "../../assest/slider/8.jpg"
 
 
 // >> ====================================================================>> 
@@ -67,7 +80,7 @@ import support_8 from "../../assest/suppoters/8.png"
 
 
 // >> ====================================================================>> 
-// >>                           Event Speaders
+// >>                           Event Speakers
 // >> ====================================================================>> 
 const EventSpeakers_user_data = [
     {
@@ -259,6 +272,20 @@ const hotel_card_data = [
     },
 ]
 
+// >> ====================================================================>> 
+// >>                         Gallery  
+// >> ====================================================================>>
+const gallery_img = [
+    {id: 1, image_link: Gallery_image_1, data_glihtbox: "type: image", data_gallery: "gallery_2"},
+    {id: 2, image_link: Gallery_image_2, data_glihtbox: "type: image", data_gallery: "gallery_2"},
+    {id: 3, image_link: Gallery_image_3, data_glihtbox: "type: image", data_gallery: "gallery_2"},
+    {id: 4, image_link: Gallery_image_4, data_glihtbox: "type: image", data_gallery: "gallery_2"},
+    {id: 5, image_link: Gallery_image_5, data_glihtbox: "type: image", data_gallery: "gallery_2"},
+    {id: 6, image_link: Gallery_image_6, data_glihtbox: "type: image", data_gallery: "gallery_2"},
+    {id: 7, image_link: Gallery_image_7, data_glihtbox: "type: image", data_gallery: "gallery_2"},
+    {id: 8, image_link: Gallery_image_8, data_glihtbox: "type: image", data_gallery: "gallery_2"},
+]
+
 
 
 // >> ====================================================================>> 
@@ -296,7 +323,9 @@ const sponsor_data = [
 ]
 
 
-
+// >> ====================================================================>> 
+// >>                         FAQ'S DATA  
+// >> ====================================================================>>
 const FAQ_DATA = [
     {
         id: 1, 
@@ -407,6 +436,9 @@ export {
 
     // >> HOTEL CARD DATA
     hotel_card_data ,
+
+    // >> GALLERY IMAGE
+    gallery_img,
 
     // >> SPONSOR DATA
     sponsor_data,
