@@ -609,13 +609,19 @@
 ._gallery {
     padding: 60px 0;
 
+    ._container {
+        max-width: 95% !important;
+        margin: 0 auto;
+    }
+
     .mySwiper {
+        margin-top: 1.5rem;
+        margin-bottom: 1.5rem;
 
         ._mySwiper_slide_item {
             max-height: 400px;
             max-width: 400px !important;
             background-color: #ccc;
-            margin-right: 2rem;
 
             a {
                 height: 100%;
@@ -642,6 +648,7 @@
 // >> sponsor
 ._sponsor {
     padding: 60px 0;
+    background-color: #f6f7fd;
 
     ._content {
 

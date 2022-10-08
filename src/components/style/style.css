@@ -938,11 +938,18 @@ a {
 ._gallery {
   padding: 60px 0;
 }
+._gallery ._container {
+  max-width: 95% !important;
+  margin: 0 auto;
+}
+._gallery .mySwiper {
+  margin-top: 1.5rem;
+  margin-bottom: 1.5rem;
+}
 ._gallery .mySwiper ._mySwiper_slide_item {
   max-height: 400px;
   max-width: 400px !important;
   background-color: #ccc;
-  margin-right: 2rem;
 }
 ._gallery .mySwiper ._mySwiper_slide_item a {
   height: 100%;
@@ -960,6 +967,7 @@ a {
 
 ._sponsor {
   padding: 60px 0;
+  background-color: #f6f7fd;
 }
 ._sponsor ._content ._context ._sponsor_grid_items {
   display: grid;
