@@ -831,6 +831,9 @@ a {
   ._event_venue ._context ._map_and_venue_info {
     flex-direction: column;
   }
+  ._event_venue ._context ._map_and_venue_info ._map {
+    margin-bottom: 5px;
+  }
   ._event_venue ._context ._map_and_venue_info ._venue_info ._venue_info_context {
     text-align: center;
   }
