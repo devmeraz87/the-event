@@ -1,5 +1,8 @@
-import Aos from "aos";
+// >> Modules
 import { useEffect } from "react";
+import Aos from "aos";
+
+// >> React icons
 import { AiOutlineMobile } from "react-icons/ai"
 import { GoMail, GoLocation } from "react-icons/go"
 
@@ -12,11 +15,9 @@ const Contact = () => {
 
     return (
         <>
-            <div style={{position: ""}} className="_contact">
+            <div className="_contact">
                 <div style={{height: "0px", position: "relative", top: "-60px"}}>
-                    <div id="contact" style={{position: "absolute", top: "-60px", height: "70px", width: "100%"}}>
-
-                    </div>
+                    <div id="contact" style={{position: "absolute", top: "-60px", height: "70px", width: "100%"}}></div>
                 </div>
                 <div className="_container">
                     <div className="_content">

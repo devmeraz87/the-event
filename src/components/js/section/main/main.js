@@ -1,4 +1,4 @@
-import { useEffect, useState } from "react";
+// >> Elements
 import About from "./components/about";
 import BuyTicket from "./components/buy_ticket";
 import Contact from "./components/contact";
@@ -12,13 +12,6 @@ import Sponsor from "./components/sponsor";
 import Subscribe from "./components/subscribe";
 
 const Main = () => {
-
-
-    
-
-    useEffect(() => {
-
-    })
 
     return (
         <>

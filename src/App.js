@@ -1,8 +1,32 @@
+// >> Modules
 import { useEffect, useState } from "react";
+
+// >> Components
 import Home from "./components/js/home/home";
-import 'bootstrap/dist/css/bootstrap.min.css';
-import "./components/style/style.css";
+
+
+
+//>> =============================================================>>
+// >>                           CSS 
+//>> =============================================================>>
+// >> Aos
 import "aos/dist/aos.css"
+
+// >> bootstrap
+import 'bootstrap/dist/css/bootstrap.min.css';
+
+// >> Glightbox
+import "glightbox/dist/css/glightbox.css";
+
+// >> Swiper 
+import "swiper/css";
+import "swiper/css/pagination";
+import "swiper/css/navigation";
+
+// >> Default custome
+import "./components/style/style.css";
+import Loading from "./components/js/loading/loading";
+
 
 function App() {
 
@@ -11,17 +35,15 @@ function App() {
   useEffect(() => {
       setTimeout(() => {
         setLoading(false);
-      }, 10);
+      }, 1500);
   },[])
 
   return (
     <div className="App">
       {loading ? (
-        <>Loading...</>
-      ) : (
-        <>
+          <Loading />
+        ) : (
           <Home />
-        </>        
       )}
     </div>
   );

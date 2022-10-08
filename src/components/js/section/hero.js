@@ -1,9 +1,11 @@
-import showcase_bg from "../../assest/hero-bg.jpg"
-import Aos from "aos";
+// >> Modules
 import { useEffect } from "react";
+import Aos from "aos";
+
+// >> Media
+import showcase_bg from "../../assest/hero_bg/hero-bg.jpg"
 
 const Hero = () => {
-  
 
     useEffect(() => {
         Aos.init({duration: 1000});

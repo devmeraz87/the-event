@@ -1,6 +1,10 @@
+// >> Modules
 import { useEffect, useState } from "react";
-import logo from "../../assest/logo.png"
 
+// >> Media
+import logo from "../../assest/logo/logo.png"
+
+// >> React icons
 import { GiHamburgerMenu } from "react-icons/gi"
 import { IoCloseSharp } from "react-icons/io5"
 
@@ -10,15 +14,17 @@ const Header = () => {
     const [scrollY_, setScrollY] = useState(0);
     const [width, setWidth] = useState(window.innerWidth);
 
+    // >> show nav transparent and color
     const runScroll = () => {
         setScrollY(window.scrollY);
     }
 
+    // >> show small nav and width nav
     const getWindowWidth = () => {
         setWidth(window.innerWidth);
     }
 
-
+    // >> show smallNav and hide
     const ShowNavFunc = () => {
         console.log("clicked");
         setShowNav(!showNav)
@@ -36,7 +42,7 @@ const Header = () => {
                 <div className="_container">
                     <div className="_content">
                         <div className="_brand_logo">
-                            <a href="">
+                            <a href="/">
                                 <img src={logo} alt="Brand Logo" />
                             </a>
                         </div>
@@ -70,7 +76,7 @@ const Header = () => {
                                                 <div className="_content">
                                                     <div className="_context _flx _flx_al_ce _flx_ju_spbt">
                                                         <div className="_brand_logo">
-                                                            <img src={logo} alt="" />
+                                                            <img src={logo} alt="Logo" />
                                                         </div>
                                                         <div onClick={ShowNavFunc} className="_close_button _flx _flx_al_ce _flx_ju_ce">
                                                            <IoCloseSharp />

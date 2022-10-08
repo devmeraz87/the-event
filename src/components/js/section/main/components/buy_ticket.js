@@ -1,3 +1,4 @@
+// >> Modules
 import Aos from "aos";
 import { useEffect } from "react";
 
@@ -12,9 +13,7 @@ const BuyTicket = () => {
         <>
             <div className="_buy_ticket">
                <div style={{height: "0px", position: "relative", top: "-60px"}}>
-                    <div id="buytickets" style={{position: "absolute", top: "-60px", height: "70px", width: "100%"}}>
-
-                    </div>
+                    <div id="buytickets" style={{position: "absolute", top: "-60px", height: "70px", width: "100%"}}></div>
                 </div>
                 <div className="_container">
                     <div className="_content">

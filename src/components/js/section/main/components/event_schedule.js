@@ -1,3 +1,4 @@
+// >> Modules
 import { useEffect } from "react";
 import Aos from "aos";
 
@@ -20,9 +21,7 @@ const EventSchedule = () => {
         <>
             <div className="_event_schedule">
                 <div style={{height: "0px", position: "relative", top: "-60px"}}>
-                    <div id="schedule" style={{position: "absolute", top: "-60px", height: "70px", width: "100%"}}>
-
-                    </div>
+                    <div id="schedule" style={{position: "absolute", top: "-60px", height: "70px", width: "100%"}}></div>
                 </div>
                 <div className="_container">
                     <div className="_content">

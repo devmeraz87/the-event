@@ -1,3 +1,4 @@
+// >> Modules
 import { useEffect } from 'react';
 import Aos from 'aos';
 import { BsChevronRight } from "react-icons/bs"

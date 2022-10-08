@@ -17,7 +17,6 @@
         position: relative;
     }
 
-
     ._context {
         height: 100%;
         display: flex;
@@ -96,8 +95,7 @@
                       transform: scale(1, 1);
                       opacity: 0;
                     }
-                  }
-                  
+                }
             }
 
             &::after {
@@ -139,7 +137,6 @@
                     border-radius: 0;
                 }
             }
-
         }
     }
 
@@ -152,6 +149,5 @@
         color: #fff;
         border-radius: 30px;
     }
-
 }
 

@@ -1,6 +1,8 @@
+// >> Modules
 import { useEffect } from "react";
 import Aos from "aos";
 
+// >> Media
 import about_bg from "../../../../assest/about/about-bg.jpg"
 
 const About = () => {
@@ -8,15 +10,12 @@ const About = () => {
     useEffect(() => {
         Aos.init({duration: 1000});
     })
-
     
     return (
         <>
             <div className="_about" style={{background: `url(${about_bg}) no-repeat center`, backgroundSize: "cover", backgroundAttachment: "fixed"}}>
                 <div style={{height: "0px", position: "relative", top: "-60px"}}>
-                    <div id="about" style={{position: "absolute", top: "-60px", height: "70px", width: "100%"}}>
-
-                    </div>
+                    <div id="about" style={{position: "absolute", top: "-60px", height: "70px", width: "100%"}}></div>
                 </div>
                 <div className="_container">
                     <div className="_content">

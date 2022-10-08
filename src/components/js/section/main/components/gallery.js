@@ -1,27 +1,18 @@
-import React, { useEffect, useRef, useState } from "react";
-
-// >> Glight box
+// >> Modules
+import React, { useEffect } from "react";
 import GLightbox from "glightbox"
-import "glightbox/dist/css/glightbox.css";
-
-// Import Swiper React components
 import { Swiper, SwiperSlide } from "swiper/react";
-
-// Import Swiper styles
-import "swiper/css";
-import "swiper/css/pagination";
-import "swiper/css/navigation";
-
-// import required modules
 import { Autoplay, Pagination, FreeMode } from "swiper";
 
 
+// >> Data
 import { gallery_img } from "../../../data/data";
 
 
 const Gallery_ = () => {
 
     useEffect(() => {
+        
         GLightbox({
             touchNavigation: true,
             loop: true,

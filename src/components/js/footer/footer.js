@@ -1,12 +1,15 @@
-import {TiSocialTwitter, TiSocialLinkedin} from "react-icons/ti";
-import {AiOutlineFacebook, AiOutlineInstagram} from "react-icons/ai";
+// >> logo
+import logo from "../../assest/logo/logo.png"
+
+// >> React icons
 import { BsChevronRight} from "react-icons/bs"
 
+// >> Data
 import { Footer_link_1, Footer_link_2, Footer_address, Footer_social } from "../data/data"; 
 
-import logo from "../../assest/logo.png"
 
 const Footer = () => {
+
     return (
         <>
             <div className="_footer">
@@ -15,8 +18,8 @@ const Footer = () => {
                         <div className="_footer_grid_items">
                             <div className="_footer_grid_item">
                                 <div className="_brand_logo">
-                                    <a href="">
-                                        <img src={logo} alt="" />
+                                    <a href="/">
+                                        <img src={logo} alt="logo" />
                                     </a>
                                 </div>
                                 <p className="_lead">
@@ -45,7 +48,7 @@ const Footer = () => {
                                     <h2 className="_heading">Useful link</h2>
                                 </div>
                                 <ul className="_links">
-                                    {Footer_link_1 && Footer_link_1.map((footer_link) => (
+                                    {Footer_link_2 && Footer_link_2.map((footer_link) => (
                                         <li key={footer_link.id}>
                                             <a className="_flx _flx_al_ce" href={footer_link.link}>
                                                 <i className="_icon _flx _flx_al_ce">

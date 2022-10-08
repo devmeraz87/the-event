@@ -19,9 +19,7 @@ const EventSpeakers = () => {
         <>
             <div className="_event_speakers">
                 <div style={{height: "0px", position: "relative", top: "0px"}}>
-                    <div id="speakers" style={{position: "absolute", top: "-60px", height: "70px", width: "100%"}}>
-
-                    </div>
+                    <div id="speakers" style={{position: "absolute", top: "-60px", height: "70px", width: "100%"}}></div>
                 </div>
                 <div className="_container">
                     <div className="_content">
