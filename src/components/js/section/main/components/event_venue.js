@@ -38,7 +38,7 @@ const EventVenue = () => {
                         </div>
                         <div className="_map_and_venue_info">
                             <div data-aos="fade-up" className="_map">
-                              <div className="mapouter"><div className="gmap_canvas"><iframe className="gmap_iframe" width="100%"  src="https://maps.google.com/maps?width=2048&amp;height=2048&amp;hl=en&amp;q=University of Oxford&amp;t=&amp;z=13&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"></iframe><a href="https://embed-google-maps.com/">Embed Google Map</a></div></div>
+                              <div className="mapouter"><div className="gmap_canvas"><iframe className="gmap_iframe" width="100%"  src="https://maps.google.com/maps?width=2048&amp;height=2048&amp;hl=en&amp;q=Mevlan Meraj&amp;t=&amp;z=17&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"></iframe><a href="https://embed-google-maps.com/">Embed Google Map</a></div></div>
                             </div>
                             <div data-aos="fade-up" className="_venue_info" style={{background: `url(${Venue_info_bg}) top center no-repeat`, backgroundSize: "cover"}}>
                                 <div className="_venue_info_context">

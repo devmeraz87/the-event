@@ -406,15 +406,15 @@ const Footer_address = [
     {id: 1, name: "A108 Adam Street"},
     {id: 2, name: "New York, NY 535022"},
     {id: 3, name: "United States"},
-    {id: 4, name: "Phone: +1 5589 55488 55"},
+    {id: 4, name: "Phone: +8801846144465"},
     {id: 5, name: "Email: devmeraz87@gmail"},
 ]
 
 const Footer_social = [
-    {id: 1, _icon: <TiSocialTwitter />, link: ""},
-    {id: 2, _icon: <AiOutlineFacebook />, link: ""},
-    {id: 3, _icon: <AiOutlineInstagram />, link: ""},
-    {id: 4, _icon: <TiSocialLinkedin />, link: ""},
+    {id: 1, _icon: <TiSocialTwitter />, link: "https://web.facebook.com/profile.php?id=100043143293016"},
+    {id: 2, _icon: <AiOutlineFacebook />, link: "https://web.facebook.com/profile.php?id=100043143293016"},
+    {id: 3, _icon: <AiOutlineInstagram />, link: "https://web.facebook.com/profile.php?id=100043143293016"},
+    {id: 4, _icon: <TiSocialLinkedin />, link: "https://web.facebook.com/profile.php?id=100043143293016"},
 ]
 
 
