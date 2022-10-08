@@ -235,10 +235,6 @@
                             color: #fff;
 
                             @media only screen and(max-width: 768px) {
-                                width: 200px;
-                            }
-
-                            @media only screen and(max-width: 576px) {
                                 width: 150px;
                             }
                             
@@ -794,6 +790,7 @@
                         margin-bottom: 10px;
                         font-weight: 500;
                         color: #aeb6d3;
+                        font-size: 16px;
                     }
 
                     ._card_subscription_price {

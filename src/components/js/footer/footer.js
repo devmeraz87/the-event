@@ -84,7 +84,7 @@ const Footer = () => {
                         <div className="_content">
                             <div className="_context _flx _flx_dir_cl _flx_al_ce _flx_ju_ce">
                                 <span className="_copy">&copy; Copyright <b>TheEvent. </b>All Rights Reserved</span>
-                                <small>Designed by <a href=""><b>Mevlan Meraj</b></a></small>
+                                <small>Designed by <a target={"_blank"} href="https://web.facebook.com/profile.php?id=100043143293016"><b>Mevlan Meraj</b></a></small>
                             </div>
                         </div>
                     </div>

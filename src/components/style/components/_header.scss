@@ -9,7 +9,7 @@
 
     &.scrolled_view {
         height: 70px;
-        background: rgba(6, 12, 34, 0.98)
+        background: rgba(6, 12, 34, 0.98);
     }
 
     ._container {
@@ -113,6 +113,85 @@
             line-height: 1;
             font-size: 13px;
             white-space: nowrap;
+        }
+    }
+}
+
+
+._small_nav_show_button {
+    margin-left: 0.75rem;
+    font-size: 28px;
+    color: #fff;
+    cursor: pointer;
+}
+
+._small_nav {
+    position: fixed;
+    top: 0;    
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #fff;
+    transform: translateY(-130%);
+    animation: small_nav_animation;
+    animation-fill-mode: forwards;
+    animation-duration: 0.5s;
+
+    @keyframes small_nav_animation {
+        to {
+            transform: translateY(0);
+        }
+    }
+
+     ._content {
+        display: block;
+    }
+    
+    ._nav_header {
+        height: 90px;
+        line-height: 90px;
+        background-color: rgba(6, 12, 34, 0.98);
+
+        &.scrolled_view {
+            height: 70px;
+            line-height: 70px;
+            background-color: rgba(6, 12, 34, 0.98);
+        }
+
+        ._context {
+            ._brand_logo {
+                img {
+                    max-height: 40px;
+
+                    @media only screen and (max-width: 768px) {
+                        max-height: 30px;
+                    }
+                }
+            }
+
+            ._close_button {
+                cursor: pointer;
+                font-size: 30px;
+                color: #fff;
+            }
+        }
+    }
+
+
+    ._content {
+
+        ul {
+            padding: 0;
+            list-style: none;
+            padding: 1.5rem 0;
+
+            li a {
+                display: block;
+                padding: 0.75rem 0;
+                color: #333;
+                font-weight: 600;
+                cursor: pointer;
+            }
         }
     }
 }

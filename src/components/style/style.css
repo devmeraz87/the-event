@@ -212,6 +212,77 @@ a {
   white-space: nowrap;
 }
 
+._small_nav_show_button {
+  margin-left: 0.75rem;
+  font-size: 28px;
+  color: #fff;
+  cursor: pointer;
+}
+
+._small_nav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #fff;
+  transform: translateY(-130%);
+  -webkit-animation: small_nav_animation;
+          animation: small_nav_animation;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+  -webkit-animation-duration: 0.5s;
+          animation-duration: 0.5s;
+}
+@-webkit-keyframes small_nav_animation {
+  to {
+    transform: translateY(0);
+  }
+}
+@keyframes small_nav_animation {
+  to {
+    transform: translateY(0);
+  }
+}
+._small_nav ._content {
+  display: block;
+}
+._small_nav ._nav_header {
+  height: 90px;
+  line-height: 90px;
+  background-color: rgba(6, 12, 34, 0.98);
+}
+._small_nav ._nav_header.scrolled_view {
+  height: 70px;
+  line-height: 70px;
+  background-color: rgba(6, 12, 34, 0.98);
+}
+._small_nav ._nav_header ._context ._brand_logo img {
+  max-height: 40px;
+}
+@media only screen and (max-width: 768px) {
+  ._small_nav ._nav_header ._context ._brand_logo img {
+    max-height: 30px;
+  }
+}
+._small_nav ._nav_header ._context ._close_button {
+  cursor: pointer;
+  font-size: 30px;
+  color: #fff;
+}
+._small_nav ._content ul {
+  padding: 0;
+  list-style: none;
+  padding: 1.5rem 0;
+}
+._small_nav ._content ul li a {
+  display: block;
+  padding: 0.75rem 0;
+  color: #333;
+  font-weight: 600;
+  cursor: pointer;
+}
+
 ._hero {
   height: 100vh;
   position: relative;
@@ -250,6 +321,14 @@ a {
   font-weight: 700;
   margin-bottom: 1rem;
   color: #fff;
+}
+@media only screen and (max-width: 768px) {
+  ._hero ._context ._heading {
+    font-size: 32px;
+  }
+  ._hero ._context ._sub_heading {
+    font-size: 15px;
+  }
 }
 ._hero a {
   display: inline-block;
@@ -543,11 +622,6 @@ a {
   color: #fff;
 }
 @media only screen and (max-width: 768px) {
-  ._event_schedule ._context ._schedule_context ._schedule_heading ._schedule_nav ._day button {
-    width: 200px;
-  }
-}
-@media only screen and (max-width: 576px) {
   ._event_schedule ._context ._schedule_context ._schedule_heading ._schedule_nav ._day button {
     width: 150px;
   }
@@ -990,6 +1064,7 @@ a {
   margin-bottom: 10px;
   font-weight: 500;
   color: #aeb6d3;
+  font-size: 16px;
 }
 ._buy_ticket ._context ._buy_ticket_grid_items ._buy_ticket_grid_item ._card_header ._card_subscription_price {
   text-align: center;
